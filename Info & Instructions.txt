@@ -1,0 +1,24 @@
+The service has been created based on PHP (v8.2.7) using Laravel framework 10.
+
+- The service calculates the possible land route based on your input Origin and Destination. The output is a list of border crossings to get from Origin to Destination.
+- You need to have the Xampp server and an editor of your choice to run the service.
+
+Instructions on how to run the service:
+1. Copy the project(landRouteCalculator.7z) from Git to your xampp directory (also unzip it).
+2. Open the project with the editor (for example : Visual Studio, PHPStorm).
+3. In the editors terminal, route the directory where project is copied.
+4. Run command - 'php artisan serve'. This will run the application on PHP development server.
+5. Click on the local server address shown in INFO(example - http://127.0.0.1:8000) after running previous command. This will launch your application in the browser(showing the welcome page).
+6. Now you can test the service by passing the HTTP request in below format:
+http://127.0.0.1:8000/routing/{origin}/{destination}
+
+
+
+Running the tests:
+1. To run the tests, use the command 'php artisan test' in the editor terminal.
+2. There are 5 test cases added to test the functionality of the service.
+- Test a single country between Origin and Destination
+- Test multiple countries between Origin and Destination
+- Test same Origin and Destination route
+- Test border sharing Origin and Destination (Adjacent countries)
+- Test Origin and Destination with no land connection
